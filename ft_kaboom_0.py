@@ -1,10 +1,12 @@
-from alchemy.grimoire.light_spellbook import light_spell_record
+from alchemy import grimoire
 
 
-print("=== Kaboom 0 ===")
-print("Using grimoire module directly")
-res = light_spell_record("Fantasy", "Earth, wind and fire")
-print(f"Testing record light spell: {res}")
+def main() -> None:
+    print("== Kaboom 0 ==")
+    print("Using grimoire module directly")
+    res = grimoire.light_spell_record("Fantasy", "Earth, wind and fire")
+    print(f"Testing record light spell: {res}")
+
 
 if __name__ == "__main__":
-    pass
+    main()
